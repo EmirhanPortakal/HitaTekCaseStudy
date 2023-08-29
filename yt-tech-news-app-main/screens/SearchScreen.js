@@ -9,7 +9,7 @@ const SearchScreen = () => {
     const [articles,setArticles] = useState([]);
 
    const searchArticles = () =>{
-       axios.get('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json',{
+       axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=2b56828cbc384f1c9b04e8d91f5a2f11',{
            params:{
                category: "general",
                q: searchText
