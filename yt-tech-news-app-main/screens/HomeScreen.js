@@ -7,7 +7,7 @@ import axios from "axios";
 const HomeScreen = () => {
     const [articles,setArticles] = useState([]);
     const getNews = () => {
-        axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=2b56828cbc384f1c9b04e8d91f5a2f11',{
+        axios.get('https://saurav.tech/NewsAPI/top-headlines/category/health/in.json',{
             params:{
                 category: "general",
             }
